@@ -17,6 +17,11 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
 		"forceConsistentCasingInFileNames": true,
-		"exclude": ["node_modules", "lib", "tests", "tmp"]
-  }
+	},
+	"exclude": [
+		"node_modules",
+		"lib",
+		"tests",
+		"tmp"
+	]
 }
