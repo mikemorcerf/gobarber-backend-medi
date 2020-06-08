@@ -1,7 +1,7 @@
 {
   "name": "primeiro-projeto-node",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/shared/infra/http/server.ts",
 	"license": "MIT",
 	"engines": {
     "node": "12.16.1"
