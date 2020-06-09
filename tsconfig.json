@@ -22,6 +22,8 @@
 		"node_modules",
 		"bower_components",
 		"jspm_packages",
-		"tmp"
+		"tmp",
+		"jest.config.js",
+		"prettier.config.js"
 	]
 }
