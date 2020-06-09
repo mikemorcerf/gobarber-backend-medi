@@ -19,9 +19,7 @@
 		"forceConsistentCasingInFileNames": true,
 	},
 	"exclude": [
-		"node_modules",
-		"lib",
-		"tests",
-		"tmp"
+		"./node_modules/*",
+		"./tmp/*"
 	]
 }
