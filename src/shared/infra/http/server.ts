@@ -6,8 +6,8 @@ import cors from 'cors';
 import { errors } from 'celebrate';
 import 'express-async-errors';
 
+import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
-import uploadConfig from '../../../config/upload';
 import rateLimiter from './middlewares/rateLimiter';
 import routes from './routes';
 
@@ -38,6 +38,4 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
 	});
 });
 
-app.listen(3333, () => {
-	console.log('🚀 Server started on port 3333!');
-});
+app.listen(process.env.PORT || 3333);

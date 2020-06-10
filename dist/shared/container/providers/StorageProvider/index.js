@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var tsyringe_1 = require("tsyringe");
-var upload_1 = __importDefault(require("../../../../config/upload"));
+var upload_1 = __importDefault(require("@config/upload"));
 var DiskStorageProvider_1 = __importDefault(require("./implementations/DiskStorageProvider"));
 var S3StorageProvider_1 = __importDefault(require("./implementations/S3StorageProvider"));
 var providers = {

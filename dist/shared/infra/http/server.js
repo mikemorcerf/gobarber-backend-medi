@@ -9,8 +9,8 @@ var express_1 = __importDefault(require("express"));
 var cors_1 = __importDefault(require("cors"));
 var celebrate_1 = require("celebrate");
 require("express-async-errors");
+var upload_1 = __importDefault(require("@config/upload"));
 var AppError_1 = __importDefault(require("@shared/errors/AppError"));
-var upload_1 = __importDefault(require("../../../config/upload"));
 var rateLimiter_1 = __importDefault(require("./middlewares/rateLimiter"));
 var routes_1 = __importDefault(require("./routes"));
 require("@shared/infra/typeorm");
@@ -29,12 +29,9 @@ app.use(function (err, request, response, _) {
             message: err.message,
         });
     }
-    console.error(err);
     return response.status(500).json({
         status: 'error',
         message: 'Internal server error',
     });
 });
-app.listen(3333, function () {
-    console.log('🚀 Server started on port 3333!');
-});
+app.listen(process.env.PORT || 3333);

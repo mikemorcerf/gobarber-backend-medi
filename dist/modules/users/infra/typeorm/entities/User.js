@@ -13,8 +13,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var typeorm_1 = require("typeorm");
+var upload_1 = __importDefault(require("@config/upload"));
 var class_transformer_1 = require("class-transformer");
-var upload_1 = __importDefault(require("../../../../../config/upload"));
 var User = /** @class */ (function () {
     function User() {
     }
