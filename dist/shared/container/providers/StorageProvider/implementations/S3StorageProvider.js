@@ -43,8 +43,8 @@ var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var mime_1 = __importDefault(require("mime"));
 var aws_sdk_1 = __importDefault(require("aws-sdk"));
-var upload_1 = __importDefault(require("@config/upload"));
 var AppError_1 = __importDefault(require("@shared/errors/AppError"));
+var upload_1 = __importDefault(require("../../../../../config/upload"));
 var S3StorageProvider = /** @class */ (function () {
     function S3StorageProvider() {
         this.client = new aws_sdk_1.default.S3({

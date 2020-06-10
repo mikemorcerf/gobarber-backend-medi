@@ -6,8 +6,8 @@ import cors from 'cors';
 import { errors } from 'celebrate';
 import 'express-async-errors';
 
-import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
+import uploadConfig from '../../../config/upload';
 import rateLimiter from './middlewares/rateLimiter';
 import routes from './routes';
 
@@ -31,8 +31,6 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
 			message: err.message,
 		});
 	}
-
-	console.error(err);
 
 	return response.status(500).json({
 		status: 'error',
