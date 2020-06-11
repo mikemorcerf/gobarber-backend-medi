@@ -8,4 +8,4 @@ var RedisCacheProvider_1 = __importDefault(require("./implementations/RedisCache
 var providers = {
     redis: RedisCacheProvider_1.default,
 };
-tsyringe_1.container.registerInstance('CacheProvider', tsyringe_1.container.resolve(providers.redis));
+tsyringe_1.container.registerSingleton('CacheProvider', providers.redis);

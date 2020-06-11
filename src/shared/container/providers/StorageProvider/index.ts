@@ -10,7 +10,7 @@ const providers = {
 	s3: S3StorageProvider,
 };
 
-container.registerInstance<IStorageProvider>(
+container.registerSingleton<IStorageProvider>(
 	'StorageProvider',
-	container.resolve(providers[uploadConfig.driver]),
+	providers[uploadConfig.driver],
 );
