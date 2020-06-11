@@ -11,4 +11,4 @@ var providers = {
     disk: DiskStorageProvider_1.default,
     s3: S3StorageProvider_1.default,
 };
-tsyringe_1.container.registerSingleton('StorageProvider', providers[upload_1.default.driver]);
+tsyringe_1.container.register('StorageProvider', providers[upload_1.default.driver]);

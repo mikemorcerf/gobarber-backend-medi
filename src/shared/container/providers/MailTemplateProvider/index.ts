@@ -7,7 +7,7 @@ const providers = {
 	handleBars: HandlebarsMailTemplateProvider,
 };
 
-container.registerSingleton<IMailTemplateProvider>(
+container.register<IMailTemplateProvider>(
 	'MailTemplateProvider',
 	providers.handleBars,
 );

@@ -8,4 +8,4 @@ var HandlebarsMailTemplateProvider_1 = __importDefault(require("./implementation
 var providers = {
     handleBars: HandlebarsMailTemplateProvider_1.default,
 };
-tsyringe_1.container.registerSingleton('MailTemplateProvider', providers.handleBars);
+tsyringe_1.container.register('MailTemplateProvider', providers.handleBars);
