@@ -7,4 +7,7 @@ const providers = {
 	redis: RedisCacheProvider,
 };
 
-container.registerSingleton<ICacheProvider>('CacheProvider', providers.redis);
+container.registerInstance<ICacheProvider>(
+	'CacheProvider',
+	container.resolve(providers.redis),
+);

@@ -15,22 +15,22 @@ import IUserTokensRepository from '@modules/users/repositories/IUserTokensReposi
 import NotificationsRepository from '@modules/notifications/infra/typeorm/repositories/NotificationsRepository';
 import INotificationsRepository from '@modules/notifications/repositories/INotificationsRepository';
 
-container.registerSingleton<IUsersRepository>(
+container.registerInstance<IUsersRepository>(
 	'UsersRepository',
-	UsersRepository,
+	container.resolve(UsersRepository),
 );
 
-container.registerSingleton<IAppointmentsRepository>(
+container.registerInstance<IAppointmentsRepository>(
 	'AppointmentsRepository',
-	AppointmentsRepository,
+	container.resolve(AppointmentsRepository),
 );
 
-container.registerSingleton<IUserTokensRepository>(
+container.registerInstance<IUserTokensRepository>(
 	'UserTokensRepository',
-	UserTokensRepository,
+	container.resolve(UserTokensRepository),
 );
 
-container.registerSingleton<INotificationsRepository>(
+container.registerInstance<INotificationsRepository>(
 	'NotificationsRepository',
-	NotificationsRepository,
+	container.resolve(NotificationsRepository),
 );
