@@ -35,6 +35,7 @@
     "rate-limiter-flexible": "^2.1.4",
     "redis": "^3.0.2",
     "reflect-metadata": "^0.1.13",
+		"tsconfig-paths": "^3.9.0",
     "tsyringe": "^4.2.0",
     "typeorm": "^0.2.24",
 		"typescript": "^3.8.3",
@@ -63,7 +64,6 @@
     "jest": "^26.0.1",
     "prettier": "^2.0.4",
     "ts-jest": "^25.5.0",
-    "ts-node-dev": "^1.0.0-pre.44",
-    "tsconfig-paths": "^3.9.0"
+    "ts-node-dev": "^1.0.0-pre.44"
   }
 }
